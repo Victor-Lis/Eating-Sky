@@ -9,6 +9,7 @@ export default function Navbar() {
         <a href="#">Recipes</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
+        <input type="text" placeholder="Search..." className={styles.navbarSearch} />
       </navbar>
     </header>
   );

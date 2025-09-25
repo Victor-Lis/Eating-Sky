@@ -16,7 +16,22 @@
 
 .navbarNav {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 24px;
+  padding: 8px 0;
+  width: 100%;
+  max-width: 1200px;
+  border: 1px #444 solid;
+  border-left: none;
+  border-right: none;
+}
+
+.navbarSearch {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
 }
 
 .navbarNav a {
