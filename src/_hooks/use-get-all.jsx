@@ -1,4 +1,4 @@
-export default function useGetAll() {
+export function useGetAll() {
   const pratos = localStorage.getItem("pratos");
   if (pratos) {
     return { pratos: JSON.parse(pratos) };
