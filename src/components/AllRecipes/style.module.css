@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-.latestRecipesSection {
+.allRecipesSection {
   width: 100%;
   text-align: center;
-  margin: 32px 0;
+  margin: 52px 0;
 }
 
 .title {
@@ -16,8 +16,11 @@
 
 .recipesGrid {
   display: flex;
-  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: auto;
   gap: 32px;
+  padding-bottom: 10px;
 }
 
 .recipeTitle {
