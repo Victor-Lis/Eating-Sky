@@ -1,16 +1,17 @@
-import styles from './style.module.css'
+import SearchMenu from "../SearchMenu";
+import styles from "./style.module.css";
 
 export default function Navbar() {
   return (
     <header className={styles.navbarHeader}>
       <h1 className={styles.navbarTitle}>Eating Sky</h1>
-      <navbar className={styles.navbarNav}>
-        <a href="#">Home</a>
-        <a href="#">Recipes</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <input type="text" placeholder="Search..." className={styles.navbarSearch} />
-      </navbar>
+      <nav className={styles.navbarNav}>
+        <a href="#">Início</a>
+        <a href="#">Receitas</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+        <SearchMenu />
+      </nav>
     </header>
   );
 }
