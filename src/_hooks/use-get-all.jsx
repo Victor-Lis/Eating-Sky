@@ -10,6 +10,13 @@ export function useGetAll() {
         descricao: "Lasanha de carne moída com molho bechamel",
         preco: 25.0,
         image: "/pratos/lasanha.jpg",
+        ingredients: [
+          "massa",
+          "carne moída",
+          "molho bechamel",
+          "queijo",
+          "tomate",
+        ],
       },
       {
         id: 2,
@@ -17,6 +24,14 @@ export function useGetAll() {
         descricao: "Pizza de calabresa com cebola e azeitonas",
         preco: 30.0,
         image: "/pratos/pizza.webp",
+        ingredients: [
+          "massa de pizza",
+          "calabresa",
+          "cebola",
+          "azeitonas",
+          "molho de tomate",
+          "queijo",
+        ],
       },
       {
         id: 3,
@@ -24,6 +39,7 @@ export function useGetAll() {
         descricao: "Salada verde com tomate, pepino e cenoura",
         preco: 15.0,
         image: "/pratos/salada.webp",
+        ingredients: ["alface", "tomate", "pepino", "cenoura", "azeite"],
       },
       {
         id: 4,
@@ -31,6 +47,14 @@ export function useGetAll() {
         descricao: "Hambúrguer artesanal com queijo cheddar e bacon",
         preco: 20.0,
         image: "/pratos/hamburguer.jpg",
+        ingredients: [
+          "pão",
+          "hambúrguer de carne",
+          "queijo cheddar",
+          "bacon",
+          "alface",
+          "tomate",
+        ],
       },
       {
         id: 5,
@@ -38,6 +62,7 @@ export function useGetAll() {
         descricao: "Combinado de sushi com salmão, atum e camarão",
         preco: 40.0,
         image: "/pratos/sushi.jpg",
+        ingredients: ["arroz", "salmão", "atum", "camarão", "alga", "shoyu"],
       },
     ];
     localStorage.setItem("pratos", JSON.stringify(pratos));

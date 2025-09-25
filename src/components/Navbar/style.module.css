@@ -47,3 +47,10 @@
 .navbarNav a:hover {
   color: #0078d4;
 }
+
+.icon {
+  cursor: pointer;
+  &:hover {
+    margin-bottom: 2px;
+  }
+}
