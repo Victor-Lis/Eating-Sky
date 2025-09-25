@@ -1,5 +1,7 @@
 import styles from "./style.module.css";
+import { Link } from "react-router-dom";
 import { useGetAll } from "../../_hooks/use-get-all";
+import LatestRecipeCard from "./components/Card";
 
 export default function LatestRecipes() {
   const data = useGetAll();
@@ -10,14 +12,7 @@ export default function LatestRecipes() {
       <h2 className={styles.title}>Últimos Pratos</h2>
       <div className={styles.recipesGrid}>
         {recipes.map((recipe) => (
-          <div key={recipe.id} className={styles.recipeCard}>
-            <img
-              src={recipe.image}
-              alt={recipe.title}
-              className={styles.recipeImage}
-            />
-            <div className={styles.recipeTitle}>{recipe.nome}</div>
-          </div>
+          <LatestRecipeCard key={recipe.id} recipe={recipe} />
         ))}
       </div>
     </section>

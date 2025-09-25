@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 .navbarHeader {
   display: flex;
@@ -9,9 +9,9 @@
 
 .navbarTitle {
   margin-bottom: 12px;
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Lavishly Yours', sans-serif;
 }
 
 .navbarNav {
@@ -19,13 +19,15 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
-  padding: 8px 0;
+  gap: 32px;
+  padding: 12px 0;
   width: 100%;
   max-width: 1200px;
-  border: 1px #444 solid;
-  border-left: none;
-  border-right: none;
+  background: linear-gradient(90deg, #f8fafc 0%, #e3e8ee 100%);
+  border-top: 2px solid #0078d4;
+  border-bottom: 2px solid #0078d4;
+  box-shadow: 0 2px 8px rgba(0, 120, 212, 0.08);
+  transition: background 0.3s;
 }
 
 .navbarSearch {
