@@ -9,8 +9,6 @@ export default function Navbar() {
   const { toggleOpen } = useModal();
   const isRoot = () => window.location.href.includes("plate") || window.location.href.includes("about");
 
-  const scrollTo = (href) => window.scrollTo(href)
-
   return (
     <header className={styles.navbarHeader}>
       <h1 className={styles.navbarTitle}>Eating Sky</h1>
@@ -24,7 +22,7 @@ export default function Navbar() {
           <></>
         )}
         <a href="#">Início</a>
-        <a href="#all-recipes" onClick={() => scrollTo("#all-recipes")}>Receitas</a>
+        <a href="/plates">Pratos</a>
         <a href="/about">Sobre</a>
         <a href="#" onClick={toggleOpen}>Contato</a>
         <SearchMenu />

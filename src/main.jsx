@@ -9,6 +9,7 @@ import MenuProvider from "./_providers/Modal.jsx";
 
 import { ToastContainer } from "react-toastify";
 import About from "./pages/About/index.jsx";
+import Plates from "./pages/Plates/index.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/" element={<App />} />
           <Route path="plate/:id" element={<Plate />} />
           <Route path="about" element={<About />} />
+          <Route path="plates" element={<Plates />} />
         </Routes>
       </MenuProvider>
       <ToastContainer />
