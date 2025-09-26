@@ -3,6 +3,8 @@ import { useModal } from "../../_hooks/use-modal";
 import styles from "./style.module.css";
 import { XCircle } from "lucide-react";
 import { toast } from "react-toastify";
+import ButtonLink from "./components/Link";
+import LinksList from "./components/Links";
 
 export default function ModalComponent() {
     const { toggleOpen } = useModal()
@@ -38,6 +40,7 @@ export default function ModalComponent() {
                 <input onChange={(e) => setEmail(e.target.value)} className={styles.formInput} />
                 <button className={styles.formButton}>{isLoading ? "Enviando..." : "Enviar!"}</button>
             </form>
+            <LinksList />
         </div>
     );
 }

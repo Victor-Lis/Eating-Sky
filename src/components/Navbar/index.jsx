@@ -21,7 +21,7 @@ export default function Navbar() {
         ) : (
           <></>
         )}
-        <a href="#">Início</a>
+        <a href="/">Início</a>
         <a href="/plates">Pratos</a>
         <a href="/about">Sobre</a>
         <a href="#" onClick={toggleOpen}>Contato</a>
