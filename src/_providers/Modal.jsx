@@ -4,7 +4,7 @@ import ModalComponent from "../components/ModalComponent";
 export const MenuContext = createContext({});
 
 export default function MenuProvider({ children }) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () =>
     setIsOpen(!isOpen)
