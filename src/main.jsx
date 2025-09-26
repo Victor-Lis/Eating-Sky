@@ -18,9 +18,9 @@ createRoot(document.getElementById("root")).render(
         <Navbar />
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="plate/:id" element={<Plate />} />
-          <Route path="about" element={<About />} />
-          <Route path="plates" element={<Plates />} />
+          <Route path="/plate/:id" element={<Plate />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/plates" element={<Plates />} />
         </Routes>
       </MenuProvider>
       <ToastContainer />
