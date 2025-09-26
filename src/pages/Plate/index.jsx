@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import styles from "./style.module.css";
-import { useGetById } from "../_hooks/use-get-by-id";
-import IngredientsList from "../components/PlateContainer/Ingredients";
+import { useGetById } from "../../_hooks/use-get-by-id";
+import IngredientsList from "../../components/PlateContainer/Ingredients";
 
 export default function PlateDetails() {
   const { id } = useParams();

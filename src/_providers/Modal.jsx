@@ -1,17 +1,17 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
+import ModalComponent from "../components/ModalComponent";
 
-const MenuContext = createContext({
-  open,
-  toggleOpen,
-});
+export const MenuContext = createContext({});
 
 export default function MenuProvider({ children }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
-  const toggleOpen = () => setIsOpen(!isOpen);
+  const toggleOpen = () =>
+    setIsOpen(!isOpen)
 
   return (
-    <MenuContext.Provider value={{ open, toggleOpen }}>
+    <MenuContext.Provider value={{ isOpen, toggleOpen }}>
+      {isOpen && <ModalComponent />}
       {children}
     </MenuContext.Provider>
   );

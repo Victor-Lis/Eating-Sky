@@ -1,11 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import SearchMenu from "../SearchMenu";
 import styles from "./style.module.css";
-import { CornerDownLeft } from "lucide-react";
+import { CornerDownLeft, Menu } from "lucide-react";
+import { useModal } from "../../_hooks/use-modal";
 
 export default function Navbar() {
   const navigate = useNavigate();
-  const isRoot = () => window.location.href.includes("plate");
+  const { toggleOpen } = useModal();
+  const isRoot = () => window.location.href.includes("plate") || window.location.href.includes("about");
+
+  const scrollTo = (href) => window.scrollTo(href)
 
   return (
     <header className={styles.navbarHeader}>
@@ -20,10 +24,14 @@ export default function Navbar() {
           <></>
         )}
         <a href="#">Início</a>
-        <a href="#">Receitas</a>
-        <a href="#">Sobre</a>
-        <a href="#">Contato</a>
+        <a href="#all-recipes" onClick={() => scrollTo("#all-recipes")}>Receitas</a>
+        <a href="/about">Sobre</a>
+        <a href="#" onClick={toggleOpen}>Contato</a>
         <SearchMenu />
+        <Menu
+          className={styles.icon}  
+          onClick={toggleOpen}
+        />
       </nav>
     </header>
   );
